@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
+
+:root {
+    --bg-color: white;
+    --container-border: #d8d8d8;
+    --intro-color: rgb(255, 255, 255);
+    --intro-hover-color:rgb(243, 243, 243);
+    --intro-bcolor: #3f51b5;
+    --nav-a-color: black;
+    --nav-a-hover-color: rgb(70, 134, 255);
+    --about-color: rgb(40, 40, 40);
+    --into-hover-color: rgb(237, 232, 232);
+    --contact-color: white;
+    --pallete-color: white;
+    --mode-color: white;
+    --container-border-hover: #afafaf;
+}
+
+.dark-theme {
+    --bg-color: rgb(42, 42, 42);
+    --container-border: rgb(54, 53, 53);
+    --intro-color: rgb(0, 0, 0);
+    --intro-hover-color:rgb(48,48,48);
+    --intro-bcolor: rgb(229, 229, 229);
+    --nav-a-color: rgb(255, 255, 255);
+    --nav-a-hover-color: rgb(255, 62, 62);
+    --about-color: rgb(255, 255, 255);
+    --into-hover-color: rgb(48, 48, 48);
+    --contact-color: rgb(229, 229, 229);
+    --pallete-color: rgb(229, 229, 229);
+    --mode-color: rgb(42, 42, 42);
+    --container-border-hover: rgb(79, 79, 79);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color)
+}
+
+ul li {
+    list-style: none;
+
+
+}
+
+#header {
+    width: 100%;
+    padding-bottom: 2vw;
+    height: fit-content;
+
+}
+
+#logo {
+
+
+    margin-left: 5vw;
+
+}
+
+#mode {
+
+
+    background-color: var(--mode-color);
+    width: 1.5vw;
+    cursor: pointer;
+    /* margin-right: 15vw; */
+}
+
+.container {
+    padding: 10px 1.5%;
+    position: sticky;
+    top: 0px;
+    background-color: var(--bg-color);
+    border: 0.1vh;
+    border-color: var(--container-border);
+    border-style: groove none;
+    transition: border-color 0.5s;
+    z-index: +1;
+}
+
+#home {
+    height: 90%;
+    margin: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    top: 1px;
+
+
+}
+
+.intro {
+    width: 600px;
+    height: max-content;
+    color: var(--intro-color);
+    padding: 2%;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    background-color: var(--intro-bcolor);
+    border-radius: 15% 5% 15% 5%;
+    margin: 1vw;
+
+}
+
+.intro>* {
+    background-color: transparent;
+}
+
+.intro>p {
+    margin: 10px;
+    font-size: 35px;
+
+
+}
+
+.intro>h1 {
+    margin: 10px;
+    padding: 10px 0px;
+    font-size: 70px;
+}
+
+.intro>h2 {
+    margin: 2px;
+    padding: 10px 0px;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    font-style: normal;
+}
+
+.pphoto {
+    width: 350px;
+    height: 350px;
+    border: 2px #3f51b5;
+    background-color: rgba(245, 245, 245, 0.826);
+    border-style: outset;
+    border-radius: 175px;
+
+
+}
+
+.pphoto>img {
+    width: 345px;
+    height: 345px;
+    border-radius: 172.5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    flex-direction: row;
+
+
+
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    height: 8vh;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: transparent;
+    margin: 10px 40px;
+    width: 4vw;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Madimi One", sans-serif;
+    font-size: 1.25rem;
+    border: none;
+
+    color: var(--nav-a-color);
+    background-color: transparent;
+    font-weight: 200;
+    transition-duration: 0.5s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.4vh;
+    text-underline-offset: 1vh;
+    color: var(--nav-a-hover-color);
+    font-size: 1.35rem;
+
+
+}
+
+#about {
+    height: max-content;
+    margin: 4vw;
+    padding-bottom: 5vh;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    border-top: 1px groove rgb(216, 216, 216);
+
+    border-bottom: 1px groove rgb(216, 216, 216);
+    color: var(--about-color);
+    transition: border-color 0.5s;
+}
+
+#about>h1 {
+    text-align: center;
+    margin: 1vh 1vw;
+    padding-top: 5vh;
+    font-size: 6rem;
+    text-decoration: underline;
+
+}
+
+#pallete {
+    display: flex;
+    margin: 0 2vw;
+    height: max-content;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#pallete>div {
+    width: 20vw;
+    height: 25vw;
+    margin: 3vh 2vw;
+    padding: 0 1%;
+    border: 1px rgb(216, 216, 216) groove;
+    border-radius: 10%;
+    background-color: var(--pallete-color);
+    color: rgb(58, 58, 58);
+}
+
+#pallete>div>* {
+    background-color: transparent;
+}
+
+#pallete>div>ul>* {
+    background-color: transparent;
+}
+
+#pallete>div>img {
+    height: 3vmax;
+    width: 3vmax;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10%
+}
+
+#pallete>div>ul {
+    position: relative;
+    top: 10%;
+    margin-top: 15%;
+
+}
+
+#pallete>div>ul>li {
+    font-size: 1.35em;
+    margin: 1.45vh;
+    line-height: 90%;
+}
+
+#pallete>div {
+    transition: transform 0.5s, background-color 0.5s, color 0.5s, border-color 0.2s;
+}
+
+#Pinfo:hover {
+    transform: translateY(-0.5vw);
+    background-color: #ef5350;
+    color: whitesmoke;
+    border-color: #ff7875;
+
+}
+
+#Skill:hover {
+    transform: translateY(-0.5vw);
+    background-color: #81c784;
+    color: whitesmoke;
+    border-color: #7ded83;
+
+}
+
+#Qualification:hover {
+    transform: translateY(-0.5vw);
+    background-color: #ffa726;
+    color: whitesmoke;
+    border-color: #fab650;
+
+}
+
+#Hobbies:hover {
+    transform: translateY(-0.5vw);
+    background-color: #42a5f5;
+    color: whitesmoke;
+    border-color: #7ac0f9;
+
+}
+
+#contact {
+    height: 10vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 1vh 1vw;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: "Madimi One", sans-serif;
+    font-size: 0.95rem;
+    color: rgb(71, 71, 71);
+    border: 1px rgb(216, 216, 216) groove;
+    border-radius: 5vh;
+    transition: border-color 0.5s;
+    background-color: var(--contact-color);
+}
+
+#contact>* {
+    background-color: transparent;
+}
+
+#contact>a>* {
+    background-color: transparent;
+}
+
+#contact>a>img {
+    width: 4vh;
+    height: 4vh;
+    margin: 0.4vh;
+    transition: transform 0.5s;
+
+}
+
+#contact>a>img:hover {
+    transform: translateY(-0.5vh);
+}
+
+#contact>h2 {
+    margin: 0.4vh;
+    transition: transform 0.5s, color 0.25s;
+}
+
+#contact>a>h2 {
+    margin: 0.4vh;
+    transition: transform 0.5s, color 0.25s;
+}
+
+#contact:hover {
+    border-color: rgb(122, 122, 122);
+}
+
+#about:hover {
+    border-color: rgb(122, 122, 122);
+}
+
+.container:hover {
+    border-color: var(--container-border-hover);
+}
+
+.intro:hover {
+    color: var(--intro-hover-color);
+}
+
+#contact>h2:hover {
+    transform: translateY(-0.5vh);
+    color: black;
+}
+
+#contact>a>h2:hover {
+    transform: translateY(-0.5vh);
+    color: black;
+}
+
+#contact>a {
+    color: rgb(71, 71, 71);
+    text-decoration-color: rgb(71, 71, 71);
+    text-decoration-line: none;
+}
